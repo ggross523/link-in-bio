@@ -1,46 +1,77 @@
 <html>
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
+
    <style>
-      * {
+      
+      /* * {
         border: 2px blue solid;
       }
+        */
+      
       .avatar-image {
         width: 128px;
         height: 128px;
         border-radius: 128px; 
       }
+      
       .photo-image {
-        width: 256px;
-        height: 256px; 
+        width: 128px;
+        height: 128px; 
         object-fit: cover;
         text-align: center;
+        border-radius: 128px;
       }
+      
       .photo-image2 {
         width: 128px;
         height: 128px; 
-        background-color: transparent;
+        mix-blend-mode: multiply;
         object-fit: contain;
         text-align: center;
       }
+      
       .social-icons-row {
       margin-bottom: 30px;
       display: flex;
       justify-content: space-around;
       }
+      
       body {
+        font-family: "Roboto";
         text-align: center;
         padding-top: 50px;
-    padding-bottom: 50px;
-    background: linear-gradient(90deg, #003f5b, #002477, #3d038e, #8007a1, #b70b8a, #cf0f54, #e7480e, #ff9913);
+        padding-bottom: 50px;
+        background: linear-gradient(90deg, #003f5b, #002477, #3d038e, #8007a1, #b70b8a, #cf0f54, #e7480e, #ff9913);
       }
+
       .main-container {
         max-width: 640px;
         margin: auto;
       }
+
       .name-row {
         font-size: 48px;
         font-weight: bold;
+        font-family: Tahoma;
+        font-weight: 1000;
+      }
+
+      .item {
+      background-color: rgba(149, 123, 173, 0.5);
+      margin-bottom: 30px;
+      border-radius: 5000px;
+      padding: 10px;
+      box-shadow: 4px 4px 10px 0px rgba(122,32,122,0.5);
+      }
+
+      a {
+        text-decoration: none;  
+        color: gold;
       }
     </style>
 
@@ -58,31 +89,33 @@
     <div class="social-icons-row">
     
       <a href="https://github.com/ggross523" target="_blank">
-        Github
+        <i class="fa-brands fa-github"></i> 
       </a>
       
-      <a href="https://www.linkedin.com/in/gideon-gross-48105993/" target="_blank"> Linkedin
+      <a href="https://www.linkedin.com/in/gideon-gross-48105993/" target="_blank"> <i class="fa-brands fa-linkedin"></i>
       </a>
     
     </div>
 
-    <div class ="cities">
-      <h1>Cities where I have lived</h1>
-      <img class ="photo-image"src="/Photos/San Diego.jpg" alt="San Diego Beach">
-      <img class ="photo-image" src="/Photos/New York.jpeg" alt="NY Skyline">
-      <img class ="photo-image" src="/Photos/Paris.jpg" alt="Paris"
+<h1>About me </h1>
+      
+    <div class="links-row">
+    
+      <div class="item" style="display: flex; align-items: center;">
+        <img src="/Photos/Rock Climbing.jpg" style="width: 64px; height: 64px; object-fit: cover; border-radius: 64px; margin-right: 15px;">
+        <a target="_blank" href="https://www.youtube.com/playlist?list=PL3qgQAu4-vVmjLV7rvpwSD_1bSwWT9Q7N" style="text-align: center; width: 100%;"> Tutorials for Rock Climbing </a>
+      </div>
+          
+      <div class="item" style="display: flex; align-items: center;">
+        <img src="/Photos/Public Transit.jpg" style="width: 64px; height: 64px; object-fit: cover; border-radius: 64px; margin-right: 15px;">
+        <a target="_blank" href="https://www.youtube.com/watch?v=j4s9WDDRE2A&t=335s" style="text-align: center; width: 100%;"> Why Public Transit is amazing </a>
+      </div>
+          
+      <div class="item" style="display: flex; align-items: center;">
+        <img src="/Photos/Judaism.png" style="width: 64px; height: 64px; object-fit: cover; border-radius: 64px; margin-right: 15px;">
+        <a target="_blank" href="https://rabbisacks.org/videos/why-i-am-a-jew/" style="text-align: center; width: 100%;"> Why I am a Jew </a>
+      </div>
     </div>
-
-    <div class="Schools">
-      <h1>Places where I have attended school</h1>
-      <img class ="photo-image2"src="/Photos/johnshopkins-large.jpg" alt="Hopkins">
-      <img class ="photo-image2"src="/Photos/Sciences Po.png" alt="Sciences Po">
-      <img class ="photo-image2"src="/Photos/Chicago Booth.jpg" alt="Chicago Booth">
-    </div>
-
-    </div>
-
-
 
   </body>
 </html>
