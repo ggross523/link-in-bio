@@ -1,6 +1,6 @@
 <html>
   <head>
-   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <style>
       * {
         border: 2px blue solid;
@@ -11,26 +11,43 @@
         border-radius: 128px; 
       }
       .photo-image {
-        width: 512px;
-        height: 512px; 
-        object-fit: cover;
-      }
-      .photo-image2 {
         width: 256px;
         height: 256px; 
+        object-fit: cover;
+        text-align: center;
+      }
+      .photo-image2 {
+        width: 128px;
+        height: 128px; 
+        background-color: transparent;
         object-fit: contain;
+        text-align: center;
+      }
+      .social-icons-row {
+      margin-bottom: 30px;
+      display: flex;
+      justify-content: space-around;
       }
       body {
-    padding-top: 50px;
+        text-align: center;
+        padding-top: 50px;
     padding-bottom: 50px;
     background: linear-gradient(90deg, #003f5b, #002477, #3d038e, #8007a1, #b70b8a, #cf0f54, #e7480e, #ff9913);
+      }
+      .main-container {
+        max-width: 640px;
+        margin: auto;
+      }
+      .name-row {
+        font-size: 48px;
+        font-weight: bold;
       }
     </style>
 
   </head>
   <body>
   
-    <div class="main=container">
+    <div class="main-container">
       <img class ="avatar-image" src="/Photos/Headshot.jpg" alt="Gideon Gross Headshot">
       </div>
 
@@ -41,16 +58,16 @@
     <div class="social-icons-row">
     
       <a href="https://github.com/ggross523" target="_blank">
-        github
+        Github
       </a>
       
-      <a href="https://www.linkedin.com/in/gideon-gross-48105993/" target="_blank"> linkedin
+      <a href="https://www.linkedin.com/in/gideon-gross-48105993/" target="_blank"> Linkedin
       </a>
     
     </div>
 
     <div class ="cities">
-      <h1>Cities Where I have lived</h1>
+      <h1>Cities where I have lived</h1>
       <img class ="photo-image"src="/Photos/San Diego.jpg" alt="San Diego Beach">
       <img class ="photo-image" src="/Photos/New York.jpeg" alt="NY Skyline">
       <img class ="photo-image" src="/Photos/Paris.jpg" alt="Paris"
