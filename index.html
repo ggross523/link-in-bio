@@ -1,22 +1,30 @@
 <html>
   <head>
-    <style>
+   
+   <style>
       * {
         border: 2px blue solid;
       }
-      body {
-        padding:30px;
+      .avatar-image {
+        width: 128px;
+        height: 128px;
+        border-radius: 128px; 
       }
-      .avatar=image {
-        width: 64px;
-        height: 64px; 
+      .photo-image {
+        width: 512px;
+        height: 512px; 
+        object-fit: cover;
+      }
+      body {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: linear-gradient(90deg, #003f5b, #002477, #3d038e, #8007a1, #b70b8a, #cf0f54, #e7480e, #ff9913);
       }
     </style>
-    <meta charset="UTF-8"
+
   </head>
   <body>
-   
-
+  
     <div class="main=container">
       <img class ="avatar-image" src="/Photos/Headshot.jpg" alt="Gideon Gross Headshot">
       </div>
@@ -38,9 +46,9 @@
 
     <div class ="cities">
       <h1>Cities Where I have lived</h1>
-      <img src="/Photos/San Diego.jpg" alt="San Diego Beach">
-      <img src="/Photos/New York.jpeg" alt="NY Skyline">
-      <img src="/Photos/Paris.jpg" alt="Paris"
+      <img class ="photo-image"src="/Photos/San Diego.jpg" alt="San Diego Beach">
+      <img class ="photo-image" src="/Photos/New York.jpeg" alt="NY Skyline">
+      <img class ="photo-image" src="/Photos/Paris.jpg" alt="Paris"
     </div>
 
     </div>
